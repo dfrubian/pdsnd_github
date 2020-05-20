@@ -17,7 +17,7 @@ mensajes =['Vamos a ver los de datos de '+Ciudades[0],'Vamos a ver los de datos 
 ciudad=""
 Resultado=""
 week = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
-search_city = input('bienvenido a las estadisticas de Bikeshare por ciudad, mes y dia ingrese su ciudad ')
+search_city = input('Estadisticas de Bikeshare por ciudad Princial, mes y dia selec su ciudad ')
 ciudad = search_city.lower()
 while search_city.lower() == "chicago" or "new york" or "washington":
     if search_city.lower() == "chicago":
@@ -30,7 +30,7 @@ while search_city.lower() == "chicago" or "new york" or "washington":
       Resultado  =(mensajes[3])
       print(ciudad)
       print(Resultado)
-      search_city = input('Esriba nombre de  ciudad ')  
+      search_city = input('Select nombre ')  
     break
     if search_city == "chicago":
       Resultado = (mensajes[0])
@@ -43,7 +43,7 @@ while search_city.lower() == "chicago" or "new york" or "washington":
 print(Resultado)
      
 ciudad = search_city.lower()
-Input_Fecha = input('Ingrese el mes de Enero a Junio ')
+Input_Fecha = input('Mes: de Ene - Jun ')
 month = Input_Fecha.lower()
 
 Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
@@ -91,7 +91,7 @@ else:
 # TO DO: display most commonly used end station
 # TO DO: display most frequent combination of start station and end station trip
 
-  Estadistica_Estaciones = input('¿vemos las estadisticas de las estaciones?')
+  Estadistica_Estaciones = input('Estadisticas de las estaciones?')
   if Estadistica_Estaciones == 'si':
     month = Input_Fecha.lower()
     Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
@@ -118,7 +118,7 @@ else:
 # TO DO: display mean travel time
 
   else:
-    Estadistica_viajes = input('¿Ver los datos de las estadisticas de los viajes?')
+    Estadistica_viajes = input('Estadisticas de los viajes?')
     if Estadistica_viajes == 'si':
       month = Input_Fecha.lower()
       Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
@@ -143,7 +143,7 @@ else:
 # TO DO: Display counts of user types
 # TO DO: Display counts of gender
     else:
-      Estadistica_generos = input('¿Quiere ver las estadisticas de los usuarios?')
+      Estadistica_generos = input('Estadisticas de los usuarios?')
       if Estadistica_generos == 'si':
         month = Input_Fecha.lower()
         Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
@@ -171,7 +171,7 @@ else:
 # TO DO: Display earliest, most recent, and most common year of birth
 
       else:
-        Estadistica_nacimientos = input('¿Quiere ver los datos de las estadisticas de las fechas de nacimiento?')
+        Estadistica_nacimientos = input('Estadisticas de las fechas de nacimiento?')
         if Estadistica_nacimientos == 'si':
           Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
           df = pd.read_csv(Datos_Ciudades[ciudad])
