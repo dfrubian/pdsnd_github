@@ -171,7 +171,7 @@ else:
 # TO DO: Display earliest, most recent, and most common year of birth
 
       else:
-        Estadistica_nacimientos = input('¿Quiere ver los datos de las estadisticas de las fechas de nacimiento?')
+        Estadistica_nacimientos = input('¿Estadisticas de las fechas de nacimiento?')
         if Estadistica_nacimientos == 'si':
           Datos_Ciudades = { 'chicago': 'chicago.csv','new york': 'new_york_city.csv','washington': 'washington.csv' }
           df = pd.read_csv(Datos_Ciudades[ciudad])
@@ -199,17 +199,17 @@ else:
 def muestra_data(df):
               inicio_loc = 0
               fin_loc = 5
-              data_cruda = input("¿Quiere ver la base de info?: ").lower()
+              data_cruda = input("¿Base de info?: ").lower()
               if data_cruda  == 'si':
                 while fin_loc <= df.shape[0] - 1:
                   print(df.iloc[inicio_loc:fin_loc,:])
                   inicio_loc += 5
                   fin_loc += 5
-                  mensaje_final = input("¿Quiere consultar de nuevo?: ").lower()
+                  mensaje_final = input("Consultar de nuevo?: ").lower()
                   if mensaje_final == 'no':
                  
                     break
                    
                    
 muestra_data(df)
-print("Gracias por su consulta")
+print("Gracias por su Visitarnos")
