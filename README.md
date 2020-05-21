@@ -1,5 +1,5 @@
 ### Date created
-April 18 2020
+La fecha de creacion es: April 18 2020
 
 ### Project Title
 Bikeshare.py
@@ -14,5 +14,5 @@ washington.csv
 bikeshare.py
 
 ### Credits
-Credit to Motivateco.com
+Credit to Motivateco.com, thanks
 
